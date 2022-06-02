@@ -6,9 +6,9 @@ const IdObj = require ("mongoose").Types.ObjectId
 
 //// function get Data only one post
 
-const getPost = function (req,res) {
-    let post = Post.find((err,result)=>
-    err ? console.log('Error while getting data: ',err) : res.send(result)
+const getPost =  function (req,res) {
+    let post =  Post.find((err,result)=>
+    err? console.log('Error while getting data: ',err) : res.send(result)
     )
 }
 

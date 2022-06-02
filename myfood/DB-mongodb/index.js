@@ -4,9 +4,8 @@ const mongoURL= "mongodb+srv://kcm_sarah:Bordel@cluster0.tjxu3.mongodb.net/my-fo
 mongoose
   .connect(mongoURL,
     {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    }
+    useNewUrlParser: true,
+    useUnifiedTopology: true    }
   )
   .then(() => console.log("Successfully connected to MongoDB"))
   .catch((err) => console.log("Connection Failed to MongoDB", err));
